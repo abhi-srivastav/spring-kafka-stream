@@ -4,14 +4,11 @@ import com.gyanexpert.kafka.customer.domain.Customer;
 import com.gyanexpert.kafka.customer.domain.CustomerBalance;
 import com.gyanexpert.kafka.customer.domain.CustomerTransaction;
 
-import org.apache.kafka.streams.state.QueryableStoreType;
 import org.apache.kafka.streams.state.QueryableStoreTypes;
 import org.apache.kafka.streams.state.ReadOnlyKeyValueStore;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.binder.kafka.streams.InteractiveQueryService;
 import org.springframework.cloud.stream.function.StreamBridge;
-import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.http.MediaType;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.support.MessageBuilder;
