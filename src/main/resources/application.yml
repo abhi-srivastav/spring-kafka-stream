@@ -1,0 +1,12 @@
+spring.application.name: kafka-streams-inventory-processor
+
+spring:
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+        
+
+spring.cloud.stream.bindings.process-in-0:
+  destination: customer-transaction
+spring.cloud.stream.bindings.process-out-0:
+  destination: customer-balance
