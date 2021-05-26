@@ -1,4 +1,4 @@
-spring.application.name: kafka-streams-inventory-processor
+spring.application.name: kafka-streams-customer-balance-processor
 
 spring:
   kafka:
